@@ -1,4 +1,4 @@
-﻿namespace Microsoft.Extensions.Logging
+﻿namespace Common.Logging.MicrosoftLogging
 {
     public class CommonLoggingProviderOptions
     {

@@ -4,23 +4,23 @@
 		<TargetFrameworks>netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
 		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
-		<PackageId>Microsoft.Extensions.Logging.CommonLogging</PackageId>
+		<PackageId>Common.Logging.MicrosoftLogging</PackageId>
 		<Authors>Hippasus</Authors>
 		<Company></Company>
-		<Product>Microsoft.Extensions.Logging.CommonLogging</Product>
+		<Product>Common.Logging.MicrosoftLogging</Product>
 		<Description>Allows to configure Common.Logging as Microsoft Extensions Logging handler on .NET Core application.</Description>
 		<Copyright></Copyright>
 		<PackageTags>Microsoft Extensions Logging Common Logging</PackageTags>
-		<RootNamespace>Microsoft.Extensions.Logging.CommonLogging</RootNamespace>
-		<AssemblyName>Microsoft.Extensions.Logging.CommonLogging</AssemblyName>
-		<PackageProjectUrl>https://github.com/hippasus/Microsoft.Extensions.Logging.CommonLogging</PackageProjectUrl>
-		<RepositoryUrl>https://github.com/hippasus/Microsoft.Extensions.Logging.CommonLogging</RepositoryUrl>
-		<Version>5.0.0</Version>
+		<RootNamespace>Common.Logging.MicrosoftLogging</RootNamespace>
+		<AssemblyName>Common.Logging.MicrosoftLogging</AssemblyName>
+		<PackageProjectUrl>https://github.com/hippasus/Common.Logging.MicrosoftLogging</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/hippasus/Common.Logging.MicrosoftLogging</RepositoryUrl>
+		<Version>5.0.0-alpha01</Version>
 		<AssemblyVersion>5.0.0.0</AssemblyVersion>
-		<FileVersion>5.0.0.0</FileVersion>
+		<FileVersion>5.0.0.0-alpha01</FileVersion>
 		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
 		<SignAssembly>true</SignAssembly>
-		<AssemblyOriginatorKeyFile>Microsoft.Extensions.Logging.CommonLogging.snk</AssemblyOriginatorKeyFile>
+		<AssemblyOriginatorKeyFile>Common.Logging.MicrosoftLogging.snk</AssemblyOriginatorKeyFile>
 		<PackageLicenseExpression></PackageLicenseExpression>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>common-logging-icon.png</PackageIcon>

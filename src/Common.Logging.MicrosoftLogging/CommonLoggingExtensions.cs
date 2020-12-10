@@ -1,5 +1,6 @@
-﻿namespace Microsoft.Extensions.Logging
+﻿namespace Common.Logging.MicrosoftLogging
 {
+    using Microsoft.Extensions.Logging;
     using Microsoft.Extensions.DependencyInjection;
 
     public static class CommonLoggingExtensions

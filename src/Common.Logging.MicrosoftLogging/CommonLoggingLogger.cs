@@ -1,8 +1,8 @@
-﻿namespace Microsoft.Extensions.Logging
+﻿namespace Common.Logging.MicrosoftLogging
 {
     using System;
 
-    using Common.Logging;
+    using Microsoft.Extensions.Logging;
 
     public class CommonLoggingLogger : ILogger
     {

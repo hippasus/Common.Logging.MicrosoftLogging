@@ -1,9 +1,9 @@
-﻿namespace Microsoft.Extensions.Logging
+﻿namespace Common.Logging.MicrosoftLogging
 {
     using System;
     using System.Collections.Concurrent;
-    using System.Collections.Generic;
-    using System.Text;
+
+    using Microsoft.Extensions.Logging;
 
     public class CommonLoggingProvider : ILoggerProvider
     {

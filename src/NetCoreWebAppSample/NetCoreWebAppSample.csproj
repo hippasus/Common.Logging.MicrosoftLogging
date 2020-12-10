@@ -5,7 +5,7 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-		<ProjectReference Include="..\Microsoft.Extensions.Logging.CommonLogging\Microsoft.Extensions.Logging.CommonLogging.csproj" />
+		<ProjectReference Include="..\Common.Logging.MicrosoftLogging\Common.Logging.MicrosoftLogging.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>
