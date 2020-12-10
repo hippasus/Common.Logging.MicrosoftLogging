@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\Microsoft.Extensions.Logging.CommonLogging\Microsoft.Extensions.Logging.CommonLogging.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Common.Logging" Version="3.4.1" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="Config\log4net.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+
+</Project>
