@@ -5,10 +5,12 @@ This project provides a logging provider for Microsoft Logging by using [Commong
 
 ## How to use
 
-* Install nuget package `Microsoft.Extensions.Logging.CommonLogging`
+* Install nuget package `Common.Logging.MicrosoftLogging`
 * Add Commong Logging in the ConfigureLogging method during host creating process
 
 ```csharp
+using Common.Logging.MicrosoftLogging;
+
 public static IHostBuilder CreateHostBuilder(string[] args) =>
     Host.CreateDefaultBuilder(args)
         .ConfigureLogging((context, logging) =>
