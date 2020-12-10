@@ -1,0 +1,92 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>netcoreapp2.0;netcoreapp2.1;netcoreapp2.2;netcoreapp3.0;netcoreapp3.1;netstandard2.0;netstandard2.1;net5.0</TargetFrameworks>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+		<PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+		<PackageId>Microsoft.Extensions.Logging.CommonLogging</PackageId>
+		<Authors>Hippasus</Authors>
+		<Company></Company>
+		<Product>Microsoft.Extensions.Logging.CommonLogging</Product>
+		<Description>Allows to configure Common.Logging as Microsoft Extensions Logging handler on .NET Core application.</Description>
+		<Copyright></Copyright>
+		<PackageTags>Microsoft Extensions Logging Common Logging</PackageTags>
+		<RootNamespace>Microsoft.Extensions.Logging.CommonLogging</RootNamespace>
+		<AssemblyName>Microsoft.Extensions.Logging.CommonLogging</AssemblyName>
+		<PackageProjectUrl>https://github.com/hippasus/Microsoft.Extensions.Logging.CommonLogging</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/hippasus/Microsoft.Extensions.Logging.CommonLogging</RepositoryUrl>
+		<Version>5.0.0</Version>
+		<AssemblyVersion>5.0.0.0</AssemblyVersion>
+		<FileVersion>5.0.0.0</FileVersion>
+		<AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>Microsoft.Extensions.Logging.CommonLogging.snk</AssemblyOriginatorKeyFile>
+		<PackageLicenseExpression></PackageLicenseExpression>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageIcon>common-logging-icon.png</PackageIcon>
+	</PropertyGroup>
+
+
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.4" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.1'">
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.0.0" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0'">
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="2.0.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="2.0.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.0.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.0.*" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.1'">
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="2.1.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="2.1.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.1.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.1.*" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.2'">
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="2.2.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="2.2.4" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="3.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="3.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.0.0" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.0.0" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.1'">
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="3.1.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="3.1.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="3.1.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="3.1.*" />
+	</ItemGroup>
+	<ItemGroup Condition="'$(TargetFramework)' == 'net5.0'">
+		<PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration" Version="5.0.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.*" />
+		<PackageReference Include="Microsoft.Extensions.Configuration.Binder" Version="5.0.*" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\..\LICENSE" Link="LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="..\common-logging-icon.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Common.Logging" Version="3.4.1" />
+	</ItemGroup>
+</Project>
